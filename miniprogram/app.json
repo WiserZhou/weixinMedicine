@@ -1,0 +1,43 @@
+{
+  "pages": [
+    "pages/home/home",
+    "pages/function/function",
+    "pages/user/user",
+    "pages/index/index",
+    "pages/logs/logs"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#129CE4",
+    "navigationBarTitleText": "拯瘤君",
+    "navigationBarTextStyle": "white",
+    "backgroundColor": "#efefef",
+    "onReachBottomDistance": 80
+  },
+  "tabBar": {
+    "color": "#666666",
+    "selectedColor": "#129CE4",
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "text": "首页",
+        "iconPath": "./images/home.png",
+        "selectedIconPath": "./images/home-active.png"
+      },
+      {
+        "pagePath": "pages/function/function",
+        "text": "功能",
+        "iconPath": "./images/function.png",
+        "selectedIconPath": "./images/function-active.png"
+      },
+      {
+        "pagePath": "pages/user/user",
+        "text": "用户",
+        "iconPath": "./images/user.png",
+        "selectedIconPath": "./images/user-active.png"
+      }
+    ]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

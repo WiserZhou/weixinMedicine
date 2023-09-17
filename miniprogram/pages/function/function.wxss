@@ -1,0 +1,5 @@
+/* pages/function/function.wxss */
+.imageSort {
+  width: 100%;
+  
+}

@@ -1,0 +1,116 @@
+/* pages/user/user.wxss */
+.container {
+  position: relative;
+  width: 97%;
+  height: 30vh;
+  /* 使用视口高度的一半作为容器高度 */
+}
+
+.img1 {
+  margin: 5px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  width: 100%;
+  height: 150%;
+  border-radius: 10px 5px 20px 15px;
+}
+
+.img2 {
+  position: absolute;
+  z-index: 2;
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 100%;
+}
+
+.username {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: rgb(139, 190, 230);
+  position: absolute;
+  top: 110%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 3;
+}
+
+.list {
+  position: absolute;
+  z-index: 2;
+  margin-top: 20vh;
+  /* 将列表的顶部与容器的底部对齐 */
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  margin: 10px;
+  margin-top: 50px;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.list-item {
+  position: relative;
+  /* 添加 */
+  display: block;
+  /* 修改 */
+  height: 50px;
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 10px;
+  margin-left: 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  background-color: rgb(255, 255, 255);
+  margin-bottom: 0px;
+  border: 2px solid rgb(230, 230, 230);
+
+}
+
+.list-item:nth-child(1) {
+  border-radius: 10px 10px 0px 0px;
+}
+
+.list-item:nth-child(6) {
+  border-radius: 0px 0px 10px 10px;
+}
+
+
+.list-item text {
+  font-size: 16px;
+  margin-right: 50px;
+  position: relative;
+  margin-left: 20px;
+  /* 添加 */
+  z-index: 1;
+  /* 添加 */
+}
+
+.list-item image {
+  width: 50rpx;
+  height: 64rpx;
+  display: block;
+  box-sizing: border-box;
+  margin-left: 190px;
+}
+
+.list-item::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.1);
+  opacity: 0;
+  transition: opacity 0.3s ease-out;
+  z-index: 0;
+  /* 修改 */
+}
+
+.list-item:hover::after {
+  opacity: 0.5;
+}
