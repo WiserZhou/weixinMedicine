@@ -4,7 +4,8 @@
     "pages/function/function",
     "pages/user/user",
     "pages/index/index",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/function/info/info"
   ],
   "window": {
     "backgroundTextStyle": "dark",

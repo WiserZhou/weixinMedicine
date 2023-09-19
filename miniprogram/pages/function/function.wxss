@@ -1,5 +1,84 @@
 /* pages/function/function.wxss */
 .imageSort {
   width: 100%;
-  
+}
+
+page {
+  background-color: rgba(38, 228, 228, 0.2);
+}
+
+button {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  margin: 10px;
+  border-radius: 10px 10px 10px 10px;
+}
+
+.container1 {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.6);
+  transform: translateY(-5px);
+  margin: 10px;
+  border-radius: 10px 10px 10px 10px;
+  background: rgb(106, 98, 254);
+  background: linear-gradient(90deg, rgba(106, 98, 254, 1) 0%, rgba(88, 137, 214, 1) 43%, rgba(0, 212, 255, 1) 97%);
+  color: aliceblue;
+  padding: 20px;
+  padding-left: 0px;
+  animation-duration: 0.3s;
+  animation-name: hover-animation;
+  animation-fill-mode: forwards;
+}
+
+.container1:hover {
+  animation-duration: 0.3s;
+  animation-name: hover-animation;
+  animation-fill-mode: forwards;
+}
+
+@keyframes hover-animation {
+  0% {
+    transform: scale(1);
+    /* 初始状态 */
+  }
+
+  50% {
+    transform: scale(1.2);
+    /* 放大到1.2倍 */
+  }
+
+  100% {
+    transform: scale(1);
+    /* 恢复到初始状态 */
+  }
+}
+
+.show {
+  /* box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  border-radius: 10px 10px 10px 10px; */
+  margin-left: 20px;
+  white-space: pre;
+  padding: 10px;
+  /* padding-top: 20px;
+  padding-bottom: 20px; */
+
+}
+
+.showOutput {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+
+.container2 {
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  margin: 10px;
+  background-color: #FFFFFF;
+  border-radius: 5px 5px 5px 5px;
+  background: rgb(106, 98, 254);
+  background: linear-gradient(90deg, rgba(106, 98, 254, 1) 0%, rgba(88, 137, 214, 1) 43%, rgba(0, 212, 255, 1) 97%);
+  color: #FFFFFF;
 }

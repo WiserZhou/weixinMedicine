@@ -1,4 +1,13 @@
 {
   "usingComponents": {},
-  "enablePullDownRefresh": true
+  "enablePullDownRefresh": true,
+  "permission": {
+    "scope.camera": {
+      "desc": "用于拍照上传"
+    },
+    "scope.writePhotosAlbum": {
+      "desc": "用于保存图片"
+    }
+  }
+  
 }

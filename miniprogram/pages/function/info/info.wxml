@@ -1,0 +1,14 @@
+<!--pages/function/info/info.wxml-->
+
+<view class="ins">诊断识别结果</view>
+<view wx:for="{{time}}" wx:key="index" class="show">
+  <view wx:if="{{index!==3}}">疾病名称：{{ item.name }}</view>
+  <view wx:if="{{index!==3}}">概率：{{ item.score }}%</view>
+  <view wx:if="{{index===3}}">时间：{{item.date}}</view>
+</view>
+
+<view class="ins">诊断结果分析</view>
+<view class="container">
+  <ec-canvas id="mychart-dom-multi-bar" canvas-id="mychart-multi-bar" ec="{{ ecBar }}"></ec-canvas>
+  <ec-canvas id="mychart-dom-multi-scatter" canvas-id="mychart-multi-scatter" ec="{{ ecScatter }}"></ec-canvas>
+</view>

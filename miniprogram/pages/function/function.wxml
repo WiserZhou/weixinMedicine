@@ -1,2 +1,16 @@
 <!--pages/function/function.wxml-->
-<image src="../../images/功能分类.png" mode="aspectFit" class="imageSort"></image>
+
+
+<button bindtap="takePhoto">拍照上传</button>
+<view class="container2">
+  <view class="showOutput">结果展示</view>
+</view >
+<view class="container1" wx:if="{{showPage}}" wx:for="{{resultList}}" wx:key="index" bind:tap="showInfo" data-index="{{index}}">
+  <view wx:for="{{item}}" wx:key="index" class="show">
+    <view wx:if="{{index!==3}}">疾病名称：{{ item.name }}</view>
+    <view wx:if="{{index!==3}}">概率：{{ item.score }}%</view>
+    <view wx:if="{{index===3}}">时间：{{item.date}}</view>
+    
+  </view>
+  <view class="show">                                               详情></view>
+</view>
