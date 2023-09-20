@@ -1,33 +1,33 @@
 <!-- pages/user/user.wxml -->
 <view class="container">
-  <image src="../../images/背景.png" class="img1" mode="center"></image>
-  <image src="../../images/用户角色.png" class="img2" mode="aspectFit"></image>
+  <image src="https://image12313213213.cn-beijing.oss.aliyuncs.com/images/背景.png" class="img1" mode="center"></image>
+  <image src="https://image12313213213.cn-beijing.oss.aliyuncs.com/images/用户角色.png" class="img2" mode="aspectFit"></image>
   <text class="username">用户</text>
 </view>
 
 <view class="list">
   <view class="list-item" bindtap="handleTap">
     <text>账户信息</text>
-    <image src="../../images/箭头 右.png" mode="aspectFit"></image>
+    <image src="https://image12313213213.cn-beijing.oss.aliyuncs.com/images/箭头 右.png" mode="aspectFit"></image>
   </view>
   <view class="list-item" bindtap="handleTap">
     <text>历史记录</text>
-    <image src="../../images/箭头 右.png" mode="aspectFit"></image>
+    <image src="https://image12313213213.cn-beijing.oss.aliyuncs.com/images/箭头 右.png" mode="aspectFit"></image>
   </view>
   <view class="list-item" bindtap="handleTap">
     <text>健康分析</text>
-    <image src="../../images/箭头 右.png" mode="aspectFit"></image>
+    <image src="https://image12313213213.cn-beijing.oss.aliyuncs.com/images/箭头 右.png" mode="aspectFit"></image>
   </view>
   <view class="list-item" bindtap="handleTap">
     <text>帮助中心</text>
-    <image src="../../images/箭头 右.png" mode="aspectFit"></image>
+    <image src="https://image12313213213.cn-beijing.oss.aliyuncs.com/images/箭头 右.png" mode="aspectFit"></image>
   </view>
   <view class="list-item" bindtap="handleTap">
     <text>版本管理</text>
-    <image src="../../images/箭头 右.png" mode="aspectFit"></image>
+    <image src="https://image12313213213.cn-beijing.oss.aliyuncs.com/images/箭头 右.png" mode="aspectFit"></image>
   </view>
   <view class="list-item" bindtap="handleTap">
     <text>客服热线</text>
-    <image src="../../images/箭头 右.png" mode="aspectFit"></image>
+    <image src="https://image12313213213.cn-beijing.oss.aliyuncs.com/images/箭头 右.png" mode="aspectFit"></image>
   </view>
 </view>

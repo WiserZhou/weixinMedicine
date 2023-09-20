@@ -1,20 +1,58 @@
 /* pages/function/info/info.wxss */
 page {
-  background: rgba(98, 248, 254,0.2);
-  background: linear-gradient(90deg, rgba(98, 248, 254, 0.2) 0%, rgba(88, 214, 198, 0.2) 50%, rgba(0, 255, 141, 0.15) 97%);
+  background: rgba(98, 248, 254, 0.2);
+  background: linear-gradient(90deg, rgba(98, 248, 254, 0.2) 0%, rgba(88, 214, 198, 0.2) 50%, rgba(0, 255, 140, 0.178) 97%);
 }
-.ins{
+.background{
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  top: 0;
+  width: 300px;
+  right: 0;
+  width: 750rpx;
+  height: 383rpx;
+  display: block;
+  box-sizing: border-box;
+  left: 0rpx;
+  top: 0rpx;
+  z-index: 1;
+}
+.display{
+ 
+  height: 400 rpx;
+  margin: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  border-radius: 10px 10px 10px 10px;
+  z-index: 2;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0.2);
+  margin-top: 180px;
+}
+.ins {
   margin-top: 20px;
   margin-left: 20px;
   padding: 10px;
   border-left: 7px solid rgb(43, 238, 245);
   border-radius: 5px 5px 5px 5px;
   margin-bottom: 20px;
+  white-space: pre;
 }
-.show {
+
+.showbox {
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
   transform: translateY(-5px);
   border-radius: 10px 10px 10px 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  background-color: #FFFFFF;
+}
+
+.show {
+  /* box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  border-radius: 10px 10px 10px 10px; */
   margin-left: 20px;
   margin-right: 20px;
   white-space: pre;
@@ -24,16 +62,26 @@ page {
   /* border-left:5px solid rgb(255, 174, 0); */
 }
 
-#mychart-dom-multi-bar {
+#chart-container {
   position: relative;
-  margin-top: 20px;
-  margin-left: 20px;
-  margin-right: 20px;
+  height: 100vh;
+  overflow: hidden;
 }
-
-#mychart-dom-multi-scatter {
-  position: relative;
-  margin-bottom: 20px;
+.image1{
+  height: 40px;
+  margin-left: -130px;
+  margin-right: 0px;
+  padding-right: 0px;
+}
+#mychart-dom-move-bar {
+  width: 90%;
+  height: 400px;
   margin-left: 20px;
+  display: block;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  border-radius: 10px 10px 10px 10px;
+  
   margin-right: 20px;
+  background-color: #FFFFFF;
 }

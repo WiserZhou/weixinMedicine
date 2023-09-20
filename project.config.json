@@ -12,7 +12,7 @@
       "outputPath": ""
     },
     "coverView": false,
-    "postcss": false,
+    "postcss": true,
     "minified": false,
     "enhance": false,
     "showShadowRootInWxmlPanel": false,

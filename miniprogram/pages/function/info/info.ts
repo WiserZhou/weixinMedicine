@@ -1,13 +1,17 @@
 // pages/function/info/info.ts
 import * as echarts from '../../../components/ec-canvas/echarts';
-Page({
 
+Page({
   /**
    * 页面的初始数据
    */
   data: {
     time: [],
     ecBar: {
+      // 如果想要禁止触屏事件，以保证在图表区域内触摸移动仍能滚动页面，
+      // 就将 disableTouch 设为 true
+      // disableTouch: true,
+
       onInit: function (canvas, width, height, dpr) {
         const barChart = echarts.init(canvas, null, {
           width: width,
@@ -19,42 +23,26 @@ Page({
 
         return barChart;
       }
-    },
-
-    ecScatter: {
-      onInit: function (canvas, width, height, dpr) {
-        const scatterChart = echarts.init(canvas, null, {
-          width: width,
-          height: height,
-          devicePixelRatio: dpr // new
-        });
-        canvas.setChart(scatterChart);
-        scatterChart.setOption(getScatterOption());
-
-        return scatterChart;
-      }
     }
-
   },
 
   /**
    * 生命周期函数--监听页面加载
    */
-  onLoad() {
+  onLoad(options) {
     var that = this;
     // 异步获取本地缓存中的数据
     wx.getStorage({
-      key: '' + this.options.date,
+      key: options.date,
       success: function (res) {
         var data = res.data;
         console.log(data); // 输出：value
         that.setData({
           time: data
         })
-        //console.log(that.data.time)
       }
     });
-
+    
 
   },
 
@@ -64,7 +52,6 @@ Page({
   onReady() {
 
   },
-
   /**
    * 生命周期函数--监听页面显示
    */
@@ -108,6 +95,7 @@ Page({
   }
 })
 
+
 function getBarOption() {
   return {
     tooltip: {
@@ -117,7 +105,7 @@ function getBarOption() {
       }
     },
     legend: {
-      data: ['热度', '正面', '负面']
+      data: ['bcc', 'mel', 'nv']
     },
     grid: {
       left: 20,
@@ -143,7 +131,7 @@ function getBarOption() {
       {
         type: 'category',
         axisTick: { show: false },
-        data: ['汽车之家', '今日头条', '百度贴吧', '一点资讯', '微信', '微博', '知乎'],
+        data: ['基地细胞癌', '光化性角化病和上皮内癌', '良性角化病样病变', '皮肤纤维瘤', '黑色素瘤', '黑素细胞痣', '血管病变'],
         axisLine: {
           lineStyle: {
             color: '#999'
@@ -156,7 +144,7 @@ function getBarOption() {
     ],
     series: [
       {
-        name: '热度',
+        name: 'bcc',
         type: 'bar',
         label: {
           normal: {
@@ -167,7 +155,7 @@ function getBarOption() {
         data: [300, 270, 340, 344, 300, 320, 310]
       },
       {
-        name: '正面',
+        name: 'mel',
         type: 'bar',
         stack: '总量',
         label: {
@@ -178,7 +166,7 @@ function getBarOption() {
         data: [120, 102, 141, 174, 190, 250, 220]
       },
       {
-        name: '负面',
+        name: 'nv',
         type: 'bar',
         stack: '总量',
         label: {
@@ -190,83 +178,5 @@ function getBarOption() {
         data: [-20, -32, -21, -34, -90, -130, -110]
       }
     ]
-  };
-}
-
-function getScatterOption() {
-
-  var data = [];
-  var data2 = [];
-
-  for (var i = 0; i < 10; i++) {
-    data.push(
-      [
-        Math.round(Math.random() * 100),
-        Math.round(Math.random() * 100),
-        Math.round(Math.random() * 40)
-      ]
-    );
-    data2.push(
-      [
-        Math.round(Math.random() * 100),
-        Math.round(Math.random() * 100),
-        Math.round(Math.random() * 100)
-      ]
-    );
-  }
-
-  var axisCommon = {
-    axisLabel: {
-      textStyle: {
-        color: '#C8C8C8'
-      }
-    },
-    axisTick: {
-      lineStyle: {
-        color: '#fff'
-      }
-    },
-    axisLine: {
-      lineStyle: {
-        color: '#C8C8C8'
-      }
-    },
-    splitLine: {
-      lineStyle: {
-        color: '#C8C8C8',
-        type: 'solid'
-      }
-    }
-  };
-
-  return {
-    backgroundColor: '#eee',
-    xAxis: axisCommon,
-    yAxis: axisCommon,
-    legend: {
-      data: ['aaaa', 'bbbb']
-    },
-    visualMap: {
-      show: false,
-      max: 100,
-      inRange: {
-        symbolSize: [20, 70]
-      }
-    },
-    series: [{
-      type: 'scatter',
-      name: 'aaaa',
-      data: data
-    },
-    {
-      name: 'bbbb',
-      type: 'scatter',
-      data: data2
-    }
-    ],
-    animationDelay: function (idx) {
-      return idx * 50;
-    },
-    animationEasing: 'elasticOut'
   };
 }

@@ -1,62 +1,62 @@
 <!--pages/home/home.wxml-->
-<image src="../../images/底层背景.png" mode="aspectFill" class="imgBack"></image>
+<image src="https://image12313213213.cn-beijing.oss.aliyuncs.com/images/底层背景.png" mode="aspectFill" class="imgBack"></image>
 <!--搜索框-->
 <view class="search-box">
   <input class="search-input" type="text" placeholder="    请输入搜索内容" bindinput="onInput" />
-  <image class="search-button" bindtap="onSearch" src="../../images/search.png" style="width: 168rpx; height: 104rpx; display: block; box-sizing: border-box"></image>
+  <image class="search-button" bindtap="onSearch" src="https://image12313213213.cn-beijing.oss.aliyuncs.com/images/search.png" style="width: 168rpx; height: 104rpx; display: block; box-sizing: border-box"></image>
 </view>
 
 
 <!--轮播图区域-->
 <swiper class="swiper-container" indicator-dots indicator-color="white" indicator-active-color="gray" autoplay interval="3000" circular easing-function="easeInOutCubic">
   <swiper-item>
-    <image src="../../images/image-swiper1.jpg"> </image>
+    <image src="https://image12313213213.cn-beijing.oss.aliyuncs.com/images/image-swiper1.jpg"> </image>
   </swiper-item>
   <swiper-item>
-    <image src="../../images/image-swiper2.jpg"> </image>
+    <image src="https://image12313213213.cn-beijing.oss.aliyuncs.com/images/image-swiper2.jpg"> </image>
   </swiper-item>
   <swiper-item>
-    <image src="../../images/image-swiper3.jpg"> </image>
+    <image src="https://image12313213213.cn-beijing.oss.aliyuncs.com/images/image-swiper3.jpg"> </image>
   </swiper-item>
 </swiper>
 <view class="container2">
   <!--两大板块-->
   <view class="container1">
-    <image src="../../images/挂号.png" mode="widthFix"></image>
-    <image src="../../images/问诊.png" mode="widthFix"></image>
+    <image src="https://image12313213213.cn-beijing.oss.aliyuncs.com/images/挂号.png" mode="widthFix"></image>
+    <image src="https://image12313213213.cn-beijing.oss.aliyuncs.com/images/问诊.png" mode="widthFix"></image>
   </view>
   <!--宫格区域-->
   <view class="grid-list">
     <view class="grid-item">
-      <image src="../../images/药品建议.png" mode="aspectFit"></image>
+      <image src="https://image12313213213.cn-beijing.oss.aliyuncs.com/images/药品建议.png" mode="aspectFit"></image>
       <text>药品建议</text>
     </view>
     <view class="grid-item">
-      <image src="../../images/医疗咨询.png" mode="aspectFit"></image>
+      <image src="https://image12313213213.cn-beijing.oss.aliyuncs.com/images/医疗咨询.png" mode="aspectFit"></image>
       <text>医疗咨询</text>
     </view>
     <view class="grid-item">
-      <image src="../../images/医疗工具.png" mode="aspectFit"></image>
+      <image src="https://image12313213213.cn-beijing.oss.aliyuncs.com/images/医疗工具.png" mode="aspectFit"></image>
       <text>医疗工具</text>
     </view>
     <view class="grid-item">
-      <image src="../../images/满意调查.png" mode="aspectFit"></image>
+      <image src="https://image12313213213.cn-beijing.oss.aliyuncs.com/images/满意调查.png" mode="aspectFit"></image>
       <text>满意调查</text>
     </view>
     <view class="grid-item">
-      <image src="../../images/账单缴费.png" mode="aspectFit"></image>
+      <image src="https://image12313213213.cn-beijing.oss.aliyuncs.com/images/账单缴费.png" mode="aspectFit"></image>
       <text>账单缴费</text>
     </view>
     <view class="grid-item">
-      <image src="../../images/报告清单.png" mode="aspectFit"></image>
+      <image src="https://image12313213213.cn-beijing.oss.aliyuncs.com/images/报告清单.png" mode="aspectFit"></image>
       <text>报告清单</text>
     </view>
     <view class="grid-item">
-      <image src="../../images/医校预约.png" mode="aspectFit"></image>
+      <image src="https://image12313213213.cn-beijing.oss.aliyuncs.com/images/医校预约.png" mode="aspectFit"></image>
       <text>医校预约</text>
     </view>
     <view class="grid-item">
-      <image src="../../images/医疗监测.png" mode="aspectFit"></image>
+      <image src="https://image12313213213.cn-beijing.oss.aliyuncs.com/images/医疗监测.png" mode="aspectFit"></image>
       <text>医疗监测</text>
     </view>
   </view>
