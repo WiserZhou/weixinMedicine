@@ -1,10 +1,19 @@
 <!--pages/function/function.wxml-->
-
-
-<button bindtap="takePhoto">拍照上传</button>
-<view class="container2">
-  <view class="showOutput">结果展示</view>
-</view >
+<image src="https://image12313213213.cn-beijing.oss.aliyuncs.com/images/对焦.png" style="width: 92rpx; height: 80rpx; display: inline-block; box-sizing: border-box; position: relative; left: 82rpx; top: 683rpx"></image>
+<image src="https://image12313213213.cn-beijing.oss.aliyuncs.com/images/护肤品.png" style="width: 92rpx; height: 80rpx; display: inline-block; box-sizing: border-box; position: relative; left: -6rpx; top: 579rpx"></image>
+<image src="https://image12313213213.cn-beijing.oss.aliyuncs.com/images/背景图标.png" style="width: 92rpx; height: 80rpx; display: inline-block; box-sizing: border-box; position: relative; left: -98rpx; top: 471rpx"></image>
+<image src="https://image12313213213.cn-beijing.oss.aliyuncs.com/images/太阳.png" style="width: 92rpx; height: 80rpx; display: inline-block; box-sizing: border-box; position: relative; left: -191rpx; top: 372rpx"></image>
+<image src="https://image12313213213.cn-beijing.oss.aliyuncs.com/images/拍摄.png" mode="aspectFit" id="take" style="position: relative; left: 6rpx; top: -104rpx"></image>
+<view  class="attention" style="position: relative; left: 252rpx; top: -192rpx">拍摄注意事项</view>
+<view class="attention1" >请在自然光线充足环境下进行拍摄</view>
+<view class="attention1">背景简单，去除遮光物和周边杂物</view>
+<view class="attention1"> 保持基本状态，不要涂抹化妆品</view>
+<view class="attention1">注意对焦，保持拍摄区域清晰可见</view>
+<button bindtap="takePhoto" style="position: relative; left: 1rpx; top: -114rpx;background-color: rgb(0, 174, 255);color: white;">拍照上传></button>
+<view class="container2" style="width: 710rpx; height: 194rpx; display: block; box-sizing: border-box;">
+<image src="https://image12313213213.cn-beijing.oss.aliyuncs.com/images/数据分析.png" mode="aspectFill"  style="width: 132rpx; height: 154rpx; display: inline-block; box-sizing: border-box; position: relative; left: 58rpx; top: 5rpx"></image>
+  <view class="showOutput" style="position: relative; left: 0rpx; top: -129rpx">结果展示</view>
+</view>
 <view class="container1" wx:if="{{showPage}}" wx:for="{{resultList}}" wx:key="index" bind:tap="showInfo" data-index="{{index}}">
   <view wx:for="{{item}}" wx:key="index" class="show">
     <view wx:if="{{index!==3}}">疾病名称：{{ item.name }}</view>

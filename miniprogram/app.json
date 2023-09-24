@@ -5,7 +5,8 @@
     "pages/user/user",
     "pages/index/index",
     "pages/logs/logs",
-    "pages/function/info/info"
+    "pages/function/info/info",
+    "pages/chat/chat"
   ],
   "window": {
     "backgroundTextStyle": "dark",
@@ -29,6 +30,12 @@
         "text": "功能",
         "iconPath": "./images/function.png",
         "selectedIconPath": "./images/function-active.png"
+      },
+      { "pagePath": "pages/chat/chat",
+        "text": "聊天",
+        "iconPath": "./images/chat.png",
+        "selectedIconPath": "./images/chat-active.png"
+
       },
       {
         "pagePath": "pages/user/user",

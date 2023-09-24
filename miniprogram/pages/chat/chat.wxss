@@ -1,0 +1,120 @@
+/* chat.wxss */
+.upStart {
+  text-align: center;
+
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 20rpx;
+}
+
+.chat-history {
+  height: max-content;
+  /* flex-grow: 1; */
+  /* overflow-y: auto; */
+  /* 添加以下代码 */
+  /* scroll-behavior: smooth;
+  scroll-margin-bottom: 100px;
+  确保 chat-input-box 不会遮挡聊天记录 */
+}
+
+.chat-input-box {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 20rpx;
+  background-color: white;
+  word-wrap: break-word;
+  min-height: 50px;
+  /* 设置一个最小高度 */
+  align-self: flex-start;
+  /* 排除自身对高度的限制 */
+}
+
+.userMsg {
+  width: 672rpx;
+  height: fit-content;
+  margin: 5px;
+  padding-right: 5px;
+  display: flex;
+  justify-content: flex-end;
+  padding: 10rpx;
+  overflow: visible;
+}
+
+.user {
+  width: 144rpx;
+  height: 116rpx;
+  position: relative;
+  left: -60rpx;
+  top: -4rpx;
+}
+
+
+#content {
+  position: relative;
+  left: -25px;
+  top: 8rpx;
+  width: 400rpx;
+  background-color: #E6E6E6;
+  border-radius: 20px;
+  padding: 20px;
+  text-align: left;
+  word-wrap: break-word;
+  height: auto;
+}
+
+#content::before {
+  content: "";
+  position: absolute;
+  top: 30%;
+  left: -10px;
+  transform: translateY(-50%);
+  width: 0;
+  height: 0;
+  border-top: 2px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-right: 10px solid #E6E6E6;
+}
+
+
+
+
+.search-input:focus {
+  border-color: #e3e6e9;
+}
+
+.search-input {
+  flex: 1;
+  padding: 8px 12px;
+  margin-right: 10px;
+  border-radius: 10px;
+  border: 1px solid rgb(240, 240, 240);
+  font-size: 16px;
+  outline: none;
+  box-shadow: none;
+  z-index: 2;
+  opacity: 1;
+}
+
+button {
+  flex-shrink: 0;
+  padding: 8px 16px;
+  border-radius: 10px;
+  border: none;
+  background-repeat: no-repeat;
+  background-position: center;
+  overflow: hidden;
+  white-space: nowrap;
+  background-color: #129ce6;
+  opacity: 0.9;
+  width: 110px !important;
+  color: white;
+}

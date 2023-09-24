@@ -21,8 +21,8 @@ button {
   transform: translateY(-5px);
   margin: 10px;
   border-radius: 10px 10px 10px 10px;
-  background: rgb(106, 98, 254);
-  background: linear-gradient(90deg, rgba(106, 98, 254, 1) 0%, rgba(88, 137, 214, 1) 43%, rgba(0, 212, 255, 1) 97%);
+  background: rgb(66, 142, 230);
+  background: linear-gradient(0deg, rgba(66, 142, 230, 1) 0%, rgba(89, 165, 255, 1) 100%);
   color: aliceblue;
   padding: 20px;
   padding-left: 0px;
@@ -66,6 +66,48 @@ button {
 
 }
 
+.attention1 {
+  position: relative;
+  left: 253rpx;
+  top: -128rpx;
+  width: 248rpx;
+  height: 57rpx;
+  display: block;
+  box-sizing: border-box;
+  font-size: 15px;
+  width: 516rpx;
+  height: 57rpx;
+  display: block;
+  box-sizing: border-box;
+  left: 192rpx;
+  top: -128rpx;
+  position: relative;
+  padding-bottom: 50px;
+}
+
+.attention {
+  position: relative;
+  left: 253rpx;
+  top: -128rpx;
+  width: 248rpx;
+  height: 57rpx;
+  display: block;
+  box-sizing: border-box;
+  font-size: 19px;
+}
+
+#take {
+  width: 100%;
+  margin: 40px;
+  width: 590rpx;
+  height: 216rpx;
+  display: inline-block;
+  box-sizing: border-box;
+  position: relative;
+  left: 1rpx;
+  top: -40rpx
+}
+
 .showOutput {
   text-align: center;
   font-size: 36px;
@@ -78,7 +120,7 @@ button {
   margin: 10px;
   background-color: #FFFFFF;
   border-radius: 5px 5px 5px 5px;
-  background: rgb(106, 98, 254);
-  background: linear-gradient(90deg, rgba(106, 98, 254, 1) 0%, rgba(88, 137, 214, 1) 43%, rgba(0, 212, 255, 1) 97%);
+  background: rgb(66, 142, 230);
+  background: linear-gradient(0deg, rgba(66, 142, 230, 1) 0%, rgba(89, 165, 255, 1) 100%);
   color: #FFFFFF;
 }

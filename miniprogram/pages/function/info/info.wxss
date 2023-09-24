@@ -19,7 +19,6 @@ page {
   z-index: 1;
 }
 .display{
- 
   height: 400 rpx;
   margin: 10px;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
@@ -37,7 +36,9 @@ page {
   border-left: 7px solid rgb(43, 238, 245);
   border-radius: 5px 5px 5px 5px;
   margin-bottom: 20px;
-  white-space: pre;
+  margin-right: 170px;
+  background-color: #FFFFFF;
+  text-indent: 2em;
 }
 
 .showbox {
@@ -47,8 +48,14 @@ page {
   margin-left: 20px;
   margin-right: 20px;
   background-color: #FFFFFF;
+  padding: 10px;
+  
 }
-
+.words{
+  word-wrap: break-word; /* 文本自动换行 */
+  white-space: normal; /* 空白符自动换行 */
+  text-indent: 2em;
+}
 .show {
   /* box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
   transform: translateY(-5px);

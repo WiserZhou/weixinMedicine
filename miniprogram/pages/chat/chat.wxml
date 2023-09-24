@@ -1,0 +1,18 @@
+<!-- chat.wxml -->
+<view class="upStart">
+  聊天</view>
+
+<view class="chat-history">
+  <!-- 这里展示聊天记录 -->
+  <view wx:for="{{messages}}" wx:key="index" class="userMsg" style="">
+    <image src="https://image12313213213.cn-beijing.oss.aliyuncs.com/images/用户.png" mode="aspectFit" class="user" style=""></image>
+    <text class="{{item.isSelf?true:false}}" id="content" style="" auto-height="{{true}}" placeholder="">{{item.text}}</text>
+  </view>
+</view>
+<view class="chat-input-box">
+  <input class="search-input" type="text" placeholder="请输入搜索内容" bindinput="onInput" value="{{inputValue}}"></input>
+  <button bindtap="onSend" style="position: relative; left: 0rpx; top: -1rpx">发送</button>
+</view>
+
+
+<image></image>

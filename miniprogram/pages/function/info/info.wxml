@@ -1,18 +1,28 @@
 <!--pages/function/info/info.wxml-->
-<image src="https://image12313213213.cn-beijing.oss.aliyuncs.com/images/查房.png" mode="aspectFill"
-class="background"></image>
+<image src="https://image12313213213.cn-beijing.oss.aliyuncs.com/images/标签.png" style="position: relative; left: 54rpx; top: 443rpx; width: 98rpx; height: 84rpx; display: inline-block; box-sizing: border-box; z-index: 3"></image>
+<image src="https://image12313213213.cn-beijing.oss.aliyuncs.com/images/标签.png" style="position: relative; left: -40rpx; top: 1088rpx; width: 98rpx; height: 84rpx; display: inline-block; box-sizing: border-box; z-index: 3"></image>
+<image src="https://image12313213213.cn-beijing.oss.aliyuncs.com/images/标签.png" style="position: relative; left: -142rpx; top: 2056rpx; width: 98rpx; height: 84rpx; display: inline-block; box-sizing: border-box; z-index: 3"></image>
+<image src="https://image12313213213.cn-beijing.oss.aliyuncs.com/images/查房.png" mode="aspectFill" class="background"></image>
 <view class="display">
-<view class="ins">诊断识别结果</view>
-<view class="showbox">
-  <view wx:for="{{time}}" wx:key="index" class="show">
-    <view wx:if="{{index!==3}}">疾病名称：{{ item.name }}</view>
-    <view wx:if="{{index!==3}}">概率：{{ item.score }}%</view>
-    <view wx:if="{{index===3}}">时间：{{item.date}}</view>
+  <view class="ins">诊断识别结果</view>
+  <view class="showbox">
+    <view wx:for="{{time}}" wx:key="index" class="show">
+      <view wx:if="{{index!==3}}">疾病名称：{{ item.name }}</view>
+      <view wx:if="{{index!==3}}">概率：{{ item.score }}%</view>
+      <view wx:if="{{index===3}}">时间：{{item.date}}</view>
+    </view>
   </view>
-</view>
 
-<view class="ins">诊断结果分析</view>
-<ec-canvas id="mychart-dom-move-bar" canvas-id="mychart-move-bar" ec="{{ ecBar }}"></ec-canvas>
+  <view class="ins">诊断结果分析</view>
+  <ec-canvas id="mychart-dom-move-bar" canvas-id="mychart-move-bar" ec="{{ ecBar }}"></ec-canvas>
 
-<view class="ins">病例分析介绍</view>
+  <view class="ins">病例分析介绍</view>
+  <view class="showbox" style="white-space: pre;font-size: 14px;"><view class="words">基底细胞癌是一种皮肤癌。基底细胞癌起源于基底细胞。基底细胞是皮肤内的一类细胞，随着旧细胞死亡，基底细胞会产生新的皮肤细胞。</view>
+    <view class="words">
+      基底细胞癌通常呈现为皮肤上略透明的肿块，但也可能呈现其他形态。基底细胞癌最常见于暴露在日光下的皮肤区域，例如头部和颈部。
+    </view>
+    <view class="words">
+      通常认为，基底细胞癌多因长期受日光中的紫外线（UV）辐射而引起。避免日光照射和使用防晒霜可能有助于预防基底细胞癌。</view>
+  </view>
+
 </view>
