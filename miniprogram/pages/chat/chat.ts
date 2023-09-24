@@ -12,7 +12,7 @@ Page({
     this.setData({
       messages: [
         { text: '你好，请问你有什么要咨询的？', isSelf: false },
-        { text: '我可以为您提供各种咨询服务', isSelf: true },
+        { text: '我可以为您提供各种咨询服务', isSelf: false },
       ],
     });
   },

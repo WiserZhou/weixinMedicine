@@ -61,4 +61,5 @@
     </view>
   </view>
 </view>
-<image></image>
+<image src="https://image12313213213.cn-beijing.oss.aliyuncs.com/images/化验.png" mode="aspectFit" class="con" style="width: 338rpx; height: 300rpx; display: inline-block; box-sizing: border-box; left: 0rpx; top: 0rpx"></image>
+<image src="https://image12313213213.cn-beijing.oss.aliyuncs.com/images/医学研究.png" mode="aspectFit" class="con" style="position: relative; left: 354rpx; top: -455rpx; width: 366rpx; height: 300rpx; display: inline-block; box-sizing: border-box"></image>

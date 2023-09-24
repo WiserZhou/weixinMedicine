@@ -92,6 +92,27 @@ swiper swiper-item image {
   background-color: #FFFFFF;
 }
 
+.con{
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+  transform: translateY(-5px);
+  margin: 10px;
+  border-radius: 10px 10px 10px 10px;
+  z-index: 2;
+  position: relative;
+  background-color: #FFFFFF;
+  /* 将宽度设置为100% */
+  width: 50%;
+  /* 设置每个宫格项占据的高度 */
+  height: 280rpx;
+  margin-bottom: 60px;
+  /* 设置每个宫格项之间的竖向间距 */
+  background-color: #fff;
+  border-radius: 10px;
+  box-sizing: initial;
+  /* box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1); 设置宫格项的阴影效果 */
+  text-align: center;
+}
+
 /*两大板块*/
 .container1 {
   display: flex;
